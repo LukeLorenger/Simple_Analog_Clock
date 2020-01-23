@@ -84,7 +84,7 @@ while True:
 
     # Call Function
     draw_clock(h, m, s, pen) # 10o'clock, 15 minutes, 0 seconds
-    # Side note Everything is drawn into memory, the update pulls everything to screen
+    # Side note Everything is drawn into memory, the wn.update pulls everything to screen
     wn.update()
 
     #Sleep for one second
