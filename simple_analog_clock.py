@@ -28,13 +28,13 @@ def draw_clock(h, m, s, pen): # Defining function, draw a clock, using pen turtl
     pen.setheading(180) # turtle facing to the eft
     pen.color("white") # Color
     pen.pendown() # I want a line drawn at this point
-    pen.circle(310) # Draw circle 210 is radius of circle
+    pen.circle(210) # Draw circle 210 is radius of circle
 
 
     # Draw hands
     pen.penup() # Stop drawing line
     pen.goto(0,0) # Go to center
-    pen.setheading(20) # Face up
+    pen.setheading(90) # Face up
 
     # For Loop
     # Place holder
@@ -64,7 +64,7 @@ def draw_clock(h, m, s, pen): # Defining function, draw a clock, using pen turtl
     angle = (m / 60) * 360 # The angle equals the minute, divided by 60(60 minutes in hour) * 360
     pen.rt(angle)
     pen.pendown()
-    pen.fd(190) # Length of minute hand
+    pen.fd(150) # Length of minute hand
 
         # Draw second Hand
     pen.penup() # Stop Drawing
@@ -74,7 +74,7 @@ def draw_clock(h, m, s, pen): # Defining function, draw a clock, using pen turtl
     angle = (s / 60) * 360 # The angle equals the second, divided by 60(60 seconds in minute) * 360
     pen.rt(angle)
     pen.pendown()
-    pen.fd(100) # Length of second hand
+    pen.fd(60) # Length of second hand
 
 #Gives us time in string format, %I gives us the hour from 0-12
 while True:
@@ -88,7 +88,7 @@ while True:
     wn.update()
 
     #Sleep for one second
-    time.sleep(2)
+    time.sleep(1)
 
     #Clear the last checked clock time
     pen.clear() 
